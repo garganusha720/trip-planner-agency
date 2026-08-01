@@ -8,7 +8,6 @@ import {
   Wallet,
   Briefcase,
   ShieldCheck,
-  Star,
   Lock,
   RefreshCw,
   Headphones,
@@ -123,32 +122,6 @@ export default function Page() {
                 title="Hassle Free"
                 desc="Save hours of planning and travel stress"
               />
-            </div>
-
-            <div className="mt-8 inline-flex items-center gap-3 rounded-2xl border border-border bg-card/80 px-4 py-3 backdrop-blur">
-              <div className="flex -space-x-2">
-                {["a", "b", "c", "d"].map((k, i) => (
-                  <span
-                    key={k}
-                    className="flex size-8 items-center justify-center rounded-full border-2 border-card bg-secondary text-xs font-semibold text-secondary-foreground"
-                  >
-                    {String.fromCharCode(65 + i)}
-                  </span>
-                ))}
-              </div>
-              <div>
-                <p className="text-sm font-medium text-primary">
-                  Loved by 10,000+ travelers
-                </p>
-                <div className="flex items-center gap-1 text-sm">
-                  <span className="flex text-accent">
-                    {Array.from({ length: 5 }).map((_, i) => (
-                      <Star key={i} className="size-3.5 fill-current" />
-                    ))}
-                  </span>
-                  <span className="font-semibold">4.8/5</span>
-                </div>
-              </div>
             </div>
           </div>
 
